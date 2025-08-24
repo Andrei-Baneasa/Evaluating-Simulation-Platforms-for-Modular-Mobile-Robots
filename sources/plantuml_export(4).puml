@@ -1,0 +1,109 @@
+
+
+@startuml
+actor Trainer
+
+box "Environment 1"
+participant Robot1 as R1
+participant Module1_1 as M1_1
+participant Controller1_1 as C1_1
+participant Module1_2 as M1_2
+participant Controller1_2 as C1_2
+participant Module1_3 as M1_3
+participant Controller1_3 as C1_3
+end box
+
+box "Environment 2"
+participant Robot2 as R2
+participant Module2_1 as M2_1
+participant Controller2_1 as C2_1
+participant Module2_2 as M2_2
+participant Controller2_2 as C2_2
+participant Module2_3 as M2_3
+participant Controller2_3 as C2_3
+end box
+
+== Initialization ==
+Trainer -> R1 : _init_(module_path, configuration)
+R1 -> M1_1 : _init_(module_path)
+R1 -> M1_2 : _init_(module_path, start_pos, start_euler)
+R1 -> M1_3 : _init_(start_pos, start_euler)
+
+Trainer -> R2 : _init_()
+R2 -> M2_1 : _init_(module_path)
+R2 -> M2_2 : _init_(module_path, start_pos, start_euler)
+R2 -> M2_3 : _init_(module_path, start_pos, start_euler)
+
+Trainer->R1: set_target()
+R1->M1_1: set_target()
+R1->M1_2: ...
+R1->M1_3: ...
+
+Trainer->R2: set_target()
+R2->M2_1: set_target()
+R2->M2_2: ...
+R2->M2_3: ...
+
+== Training Step ==
+loop each timestep
+    par Environment 1
+    Trainer -> R1 : controller_step()
+    R1 -> M1_1 : get_state()
+    R1 -> M1_2 : get_state()
+    R1 -> M1_3 : get_state()
+    M1_1 -> R1 : get_peers_states()
+    M1_1 -> C1_1 : controller_step(states)
+    M1_1 -> M1_1 : _apply_wheel_velocity()
+
+    R1 -> M1_2 : ...
+    R1 -> M1_3 : ...
+        alt if tipped over
+        R1 -> R1 : check_if_tipped()
+        R1 -> Trainer : report_failure()
+        destroy R1
+    else continue
+        R1 -> R1 : collect states, rewards
+    end
+    
+    alt Episode Termination
+    Trainer -> Trainer : episode_done()
+    Trainer -> R1 : reset()
+    end
+    end
+    par Environment 2
+    Trainer -> R2 : controller_step()
+    R2 -> M2_1 : get_state()
+    R2 -> M2_2 : get_state()
+    R2 -> M2_3 : get_state()
+    M2_1 -> R2 : get_peers_states()
+    M2_1 -> C2_1 : controller_step(states)
+    C2_1 --> M2_1 : wheel velocity
+    M2_1 -> M2_1 : _apply_wheel_velocity()
+
+    R2 -> M2_2 : ...
+    R2 -> M2_3 : ...
+            alt if tipped over
+        R2 -> R2 : check_if_tipped()
+        R2 -> Trainer : report_failure()
+        destroy R2
+    else continue
+        R2 -> R2 : collect states, rewards
+    end
+    end
+    Trainer -> Trainer : aggregate experiences from R1, R2
+
+    alt Episode Termination
+    Trainer -> Trainer : episode_done()
+    Trainer -> R2 : reset()
+    end
+end
+Trainer -> Trainer : update policy
+== Controller Update ==
+Trainer -> C1_1 : update_weights(new_weights)
+Trainer -> C1_2 : update_weights(new_weights)
+Trainer -> C1_3 : update_weights(new_weights)
+
+Trainer -> C2_1 : update_weights(new_weights)
+Trainer -> C2_2 : update_weights(new_weights)
+Trainer -> C2_3 : update_weights(new_weights)
+@enduml
