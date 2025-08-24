@@ -1,0 +1,3 @@
+[submodule "modular_mobile_robots"]
+	path = modular_mobile_robots
+	url = https://github.com/Andrei-Baneasa/modular_mobile_robots
