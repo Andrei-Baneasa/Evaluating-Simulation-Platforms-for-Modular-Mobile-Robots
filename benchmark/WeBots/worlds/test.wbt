@@ -1,0 +1,258 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.06805157847147132 -0.07012765731993795 0.9952140947285456 5.575821655063888
+  position -0.6528633663443034 0.19007750874927568 0.024996952141710663
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+DEF robot1 Robot {
+  translation -0.3027794185654828 -0.056125259389762136 0.08692292218019643
+  rotation -0.08451004330659663 0.1691288392648478 0.9819640972608125 -2.228743946039957
+  children [
+    DEF FRONT_CONNECTOR Connector {
+      translation -0.053 0 0
+      name "front_connector"
+      autoLock TRUE
+      distanceTolerance 0.05
+      axisTolerance 0.5
+      rotationTolerance 0.5
+    }
+    DEF Conn HingeJoint {
+      device [
+        PositionSensor {
+        }
+      ]
+      endPoint DEF connector1Solid Solid {
+        translation -0.04499999999999926 -2.0100046532956816e-07 -5.130085509397468e-07
+        rotation -0.7008798874525412 -0.13240527904685231 -0.7008824619328395 3.4048708535339163
+        children [
+          DEF FRONT_CONNECTOR Connector {
+            translation 0.037 0 0
+            name "front_connector"
+            isLocked TRUE
+            distanceTolerance 0.05
+            axisTolerance 0.5
+            rotationTolerance 0.5
+          }
+          DEF connecotr1Shape Shape {
+            appearance PBRAppearance {
+              baseColor 0.1 0 1
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.02
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE connecotr1Shape
+        physics Physics {
+        }
+        locked TRUE
+        linearVelocity -1.6810271306329475e-07 1.539928448952845e-07 2.9236241733700497e-10
+        angularVelocity -0.0005250887137140432 -0.0007001484140941082 2.6494338699417278e-06
+      }
+    }
+    DEF Wheel2Joint HingeJoint {
+      jointParameters HingeJointParameters {
+        position 5.117820898855172e-08
+        anchor 0.035 0 -0.045
+      }
+      device [
+        DEF wheel2 RotationalMotor {
+          name "whhel2"
+        }
+      ]
+      endPoint DEF Wheel1Solid Solid {
+        translation 0.035 0 -0.045
+        rotation 2.3751579899147944e-08 0.9999999999999994 2.375166714369862e-08 1.5707999999999889
+        children [
+          DEF Wheel2Shape Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.6
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.045
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Wheel2Shape
+        physics Physics {
+        }
+        linearVelocity 2.626918476531334e-08 1.815775883496735e-08 4.3247126243112204e-08
+        angularVelocity 5.0804442818008e-07 6.767177059048374e-07 2.568092551679032e-06
+      }
+    }
+    DEF Wheel1Joint HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1.440788978442771e-05
+        anchor -0.35 0 -0.045
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+        }
+      ]
+      endPoint DEF Wheel1Solid Solid {
+        translation -0.035000000000008635 0 -0.045
+        rotation 7.203981828880085e-06 -0.9999999999481027 -7.203974483593571e-06 1.5707953072314733
+        children [
+          DEF Wheel1Shape Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.4
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.045
+            }
+          }
+        ]
+        boundingObject USE Wheel1Shape
+        physics Physics {
+        }
+        linearVelocity -6.106305977354089e-07 4.6370858992873513e-07 5.049878134499891e-08
+        angularVelocity -1.309107433352405e-05 -1.7425246113957414e-05 2.4186971371221865e-06
+      }
+    }
+    DEF Base Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.1 0.15
+      }
+    }
+  ]
+  boundingObject USE Base
+  physics Physics {
+  }
+  linearVelocity -7.600232057788919e-08 8.492051115560215e-08 1.7559405781260746e-09
+  angularVelocity 5.11310302034349e-07 6.787658307676861e-07 2.5689823997707886e-06
+}
+DEF robot0 Robot {
+  translation -0.2314680736720329 0.034447898182509706 0.08692201125444568
+  rotation -0.3192807866231555 -0.16072519249966888 0.933931042309465 0.9886742407931826
+  children [
+    DEF REAR_CONNECTOR Connector {
+      translation -0.051 -1.79586e-12 0
+      rotation 0 0 1 -3.1415926535
+      children [
+        DEF ROUND_SHAPE Pose {
+          rotation 0 1 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.0005
+                radius 0.0075
+              }
+            }
+          ]
+        }
+      ]
+      name "rear_connector"
+      model "a"
+      autoLock TRUE
+      distanceTolerance 0.05
+      axisTolerance 0.5
+      rotationTolerance 0.5
+    }
+    DEF Conn HingeJoint {
+      device [
+        PositionSensor {
+        }
+      ]
+    }
+    DEF Wheel2Joint HingeJoint {
+      jointParameters HingeJointParameters {
+        position -3.966894125342337e-07
+        anchor 0.035 0 -0.045
+      }
+      device [
+        DEF wheel2 RotationalMotor {
+          name "whhel2"
+        }
+      ]
+      endPoint DEF Wheel1Solid Solid {
+        translation 0.035000000883231144 -2.3419226517618465e-06 -0.044993405626525755
+        rotation -2.0047849400305818e-07 0.9999999999999598 -2.0047357451079707e-07 1.570799999961048
+        children [
+          DEF Wheel2Shape Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.6
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.045
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Wheel2Shape
+        physics Physics {
+        }
+        linearVelocity -9.738826040462795e-09 -2.990335458739636e-08 4.349197577645895e-08
+        angularVelocity 4.960478429539549e-07 6.686159038265974e-07 -2.5252873546559777e-06
+      }
+    }
+    DEF Wheel1Joint HingeJoint {
+      jointParameters HingeJointParameters {
+        position -1.1041525431566747e-05
+        anchor -0.35 0 -0.045
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+        }
+      ]
+      endPoint DEF Wheel1Solid Solid {
+        translation -0.03499999911761409 -2.5599803368342663e-06 -0.0449927545096287
+        rotation -4.795689983210591e-06 -0.9999999999802505 4.062083549139872e-06 1.5707973835285585
+        children [
+          DEF Wheel1Shape Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.4
+            }
+            geometry Cylinder {
+              height 0.025
+              radius 0.045
+            }
+          }
+        ]
+        boundingObject USE Wheel1Shape
+        physics Physics {
+        }
+        linearVelocity -6.084266974363616e-07 4.455681787971972e-07 4.962233536217745e-08
+        angularVelocity -1.2754476677538926e-05 -1.722863020325951e-05 -2.376526684429831e-06
+      }
+    }
+    DEF Base Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.1 0.1 0.15
+      }
+    }
+  ]
+  name "robot(1)"
+  boundingObject USE Base
+  physics Physics {
+  }
+  linearVelocity -1.012848299215367e-07 4.765400300639953e-08 1.718579104211431e-09
+  angularVelocity 4.979608771338926e-07 6.734827791588822e-07 -2.5261626118914967e-06
+}

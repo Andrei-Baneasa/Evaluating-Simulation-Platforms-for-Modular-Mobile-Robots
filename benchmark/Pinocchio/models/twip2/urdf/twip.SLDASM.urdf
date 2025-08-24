@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0 0.0 0.0"
+        rpy="0 0 0" />
+      <mass
+        value="2.58861354857715" />
+      <inertia
+        ixx="0.00614521723061893"
+        ixy="7.22595051285922E-19"
+        ixz="3.57380429488389E-19"
+        iyy="0.00608229697933838"
+        iyz="4.24219841367776E-20"
+        izz="0.0026658004868403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/documents/doc/simulations/pinnochio/models/twip2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.0 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/documents/doc/simulations/pinnochio/models/twip2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_1">
+    <inertial>
+      <origin
+        xyz="0.0072647 0.0 0.0"
+        rpy="0 0 0" />
+      <mass
+        value="0.022531" />
+      <inertia
+        ixx="5.4481E-06"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="2.7962E-06"
+        iyz="0.0"
+        izz="2.7962E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/documents/doc/simulations/pinnochio/models/twip2/meshes/wheel_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/documents/doc/simulations/pinnochio/models/twip2/meshes/wheel_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.033301 0 0.023"
+      rpy="1.7468 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+  <link
+    name="wheel_2">
+    <inertial>
+      <origin
+        xyz="-0.073867 0 6.0715E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.022531" />
+      <inertia
+        ixx="5.4481E-06"
+        ixy="8.7035E-23"
+        ixz="-5.1057E-23"
+        iyy="2.7962E-06"
+        iyz="0"
+        izz="2.7962E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/documents/doc/simulations/pinnochio/models/twip2/meshes/wheel_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/documents/doc/simulations/pinnochio/models/twip2/meshes/wheel_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="-0.033301 0 0.023"
+      rpy="1.7468 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_2" />
+    <axis
+      xyz="-1 0 0" />
+   <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+</robot>

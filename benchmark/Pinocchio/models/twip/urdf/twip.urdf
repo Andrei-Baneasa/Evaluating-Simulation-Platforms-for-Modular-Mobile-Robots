@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot name="C:/Users/user/Documents/Doc/simulations/pinnochio/models/twip/urdf/twip.urdf" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link name="base_link">
+  </link>
+  <joint name="rotational motor" type="continuous">
+    <parent link="base_link"/>
+    <child link="solid(1)"/>
+    <axis xyz="-0.000005 1 0"/>
+    <limit effort="10" velocity="10"/>
+    <origin xyz="0 0 0" rpy="0 -0.000008 -0.000005"/>
+  </joint>
+  <link name="solid(1)">
+  </link>
+  <joint name="rotational motor" type="continuous">
+    <parent link="base_link"/>
+    <child link="solid(2)"/>
+    <axis xyz="0.000003 -1 0"/>
+    <limit effort="10" velocity="10"/>
+    <origin xyz="0.033504 0 0.022498" rpy="0 -0.000007 3.14159"/>
+  </joint>
+  <link name="solid(2)">
+  </link>
+  <link name="body">
+  </link>
+  <joint name="base_link_body_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="body"/>
+    <origin xyz="0.033496 0 0.022498" rpy="0 0 0"/>
+  </joint>
+</robot>
