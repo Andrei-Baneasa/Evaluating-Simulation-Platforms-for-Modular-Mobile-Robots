@@ -1,3 +1,3 @@
-[submodule "modular_mobile_robots"]
-	path = modular_mobile_robots
-	url = https://github.com/Andrei-Baneasa/modular_mobile_robots
+[submodule "Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots"]
+	path = Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots
+	url = https://github.com/Andrei-Baneasa/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots
