@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem1SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0389711431702996 -0.0357941197648907 0.0361229163502598"
+        rpy="0 0 0" />
+      <mass
+        value="0.0574273352835146" />
+      <inertia
+        ixx="6.36405788919989E-05"
+        ixy="-6.38209771093117E-20"
+        ixz="-1.03933955422549E-20"
+        iyy="5.98381182947465E-05"
+        iyz="-3.76352627981E-21"
+        izz="7.86534273855988E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_link_1">
+    <inertial>
+      <origin
+        xyz="1.01307850997046E-15 7.59808882477842E-16 -0.0122203174661168"
+        rpy="0 0 0" />
+      <mass
+        value="0.0322480558900175" />
+      <inertia
+        ixx="5.00664219138574E-06"
+        ixy="-2.36335127109963E-36"
+        ixz="1.25338250291476E-20"
+        iyy="5.00664219138573E-06"
+        iyz="-3.79849766000684E-22"
+        izz="6.79644492136784E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/wheel_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/wheel_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint_1"
+    type="continuous">
+    <origin
+      xyz="-0.0504422863405982 -0.0357941197648905 0.019"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_link_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="connector_link_1">
+    <inertial>
+      <origin
+        xyz="6.93889390390723E-18 -6.93889390390723E-18 -0.00150000000000017"
+        rpy="0 0 0" />
+      <mass
+        value="0.00135716802635079" />
+      <inertia
+        ixx="4.98759249683916E-08"
+        ixy="-6.35011624377447E-38"
+        ixz="-3.36917686260086E-22"
+        iyy="4.98759249683916E-08"
+        iyz="9.07578526150396E-24"
+        izz="9.77160978972571E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/connector_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/connector_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connector_joint_1"
+    type="continuous">
+    <origin
+      xyz="-0.0749422863405991 -0.0357941197648905 0.04"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="connector_link_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="connector_link_2">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -6.93889390390723E-18 -0.0015"
+        rpy="0 0 0" />
+      <mass
+        value="0.00135716802635079" />
+      <inertia
+        ixx="4.98759249683916E-08"
+        ixy="-1.24412434361125E-37"
+        ixz="-6.55663503485308E-22"
+        iyy="4.98759249683916E-08"
+        iyz="9.075785261504E-24"
+        izz="9.7716097897257E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/connector_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/connector_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connector_joint_2"
+    type="continuous">
+    <origin
+      xyz="0 -0.0357941197648913 0.04"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="connector_link_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_link_2">
+    <inertial>
+      <origin
+        xyz="6.93889390390723E-18 -3.46944695195361E-18 -0.0122796825338838"
+        rpy="0 0 0" />
+      <mass
+        value="0.0322480558900175" />
+      <inertia
+        ixx="5.00664219138574E-06"
+        ixy="-3.96777558778301E-37"
+        ixz="2.53003015816238E-22"
+        iyy="5.00664219138573E-06"
+        iyz="3.79849766000682E-22"
+        izz="6.79644492136784E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/wheel_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="C:/Users/user/Desktop/modular_mobile_robots/modules/urdf/Assem1.SLDASM/meshes/wheel_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint_2"
+    type="continuous">
+    <origin
+      xyz="-0.00300000000000001 -0.0357941197648908 0.019"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_link_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

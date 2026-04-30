@@ -1,0 +1,20 @@
+@startuml
+class Module {
+    _setup_plot()
+    _update_plot()
+    get_id()
+    get_state()
+    _apply_wheel_velocity()
+    controller_step()
+        urdf_path
+    start_pos
+    start_euler
+    start_ori
+    fixed_base
+    pitch_error_history
+    control_signal_history
+    wheelspeed_history
+    robot_id
+    __init__()
+}
+@enduml

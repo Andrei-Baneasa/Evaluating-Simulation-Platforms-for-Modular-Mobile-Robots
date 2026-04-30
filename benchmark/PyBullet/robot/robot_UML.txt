@@ -1,0 +1,6 @@
+@startuml
+class Robot {
+    hex_face_offset()
+        __init__()
+}
+@enduml
