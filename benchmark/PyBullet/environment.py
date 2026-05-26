@@ -1,9 +1,12 @@
 import pybullet as p
 import pybullet_data
 
-def setup_environment():
+def setup_environment(gui=True):
     # Configure PyBullet #
-    p.connect(p.GUI)
+    if gui:
+        p.connect(p.GUI)
+    else:
+        p.connect(p.DIRECT)
     p.setAdditionalSearchPath(pybullet_data.getDataPath())
     p.resetSimulation()
     p.setGravity(0, 0, -9.81) # set Earth gravity
