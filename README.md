@@ -148,14 +148,7 @@ The study compares Webots, Pinocchio/Jiminy, and PyBullet from the perspective o
 
 If you use this repository in academic work, please cite the associated publication.
 
-```bibtex
-@article{baneasa2026simulation,
-  title={Evaluating Simulation Platforms for Modular Mobile Robotic Systems},
-  author={Baneasa, Andrei and Buleandra, Debora-Gabriela and others},
-  journal={Machines},
-  year={2026}
-}
-```
+* Awaiting Publication *
 
 ---
 
