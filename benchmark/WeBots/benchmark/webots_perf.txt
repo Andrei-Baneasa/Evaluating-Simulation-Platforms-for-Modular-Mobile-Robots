@@ -1,0 +1,240 @@
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 171.329x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             313       809.009            0.003         0.070             0.031              28.638                                0.000                   0.000              nan     0.000                      0.115 
+TOT             313       809.009            0.965        22.016             9.624             114.552                                0.000                   0.000            0.000     0.000                     18.278 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 180.992x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       781.433            0.003         0.066             0.031              27.429                                0.000                   0.000              nan     0.000                      0.120 
+TOT             312       781.433            0.919        20.626             9.717             109.717                                0.000                   0.000            0.000     0.000                     18.989 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 174.863x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       430.463            0.003         0.070             0.031              28.611                                0.000                   0.000              nan     0.000                      0.123 
+TOT             312       430.463            0.934        21.890             9.573             114.444                                0.000                   0.000            0.000     0.000                     19.506 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 174.144x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       420.869            0.003         0.071             0.031              35.496                                0.000                   0.000              nan     0.000                      0.121 
+TOT             312       420.869            0.935        22.189             9.800             141.984                                0.000                   0.000            0.000     0.000                     19.151 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 172.919x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       419.746            0.003         0.071             0.032              28.812                                0.000                   0.000              nan     0.000                      0.124 
+TOT             312       419.746            0.969        22.102             9.893             115.248                                0.000                   0.000            0.000     0.000                     19.642 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 173.828x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       422.462            0.003         0.071             0.031              32.083                                0.000                   0.000              nan     0.000                      0.129 
+TOT             312       422.462            0.986        22.208             9.739             128.333                                0.000                   0.000            0.000     0.000                     20.406 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 168.188x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       424.109            0.003         0.073             0.032              28.204                                0.000                   0.000              nan     0.000                      0.122 
+TOT             312       424.109            0.947        22.744             9.883             112.817                                0.000                   0.000            0.000     0.000                     19.400 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 179.857x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       420.689            0.003         0.066             0.031              29.381                                0.000                   0.000              nan     0.000                      0.117 
+TOT             312       420.689            0.889        20.643             9.610             117.522                                0.000                   0.000            0.000     0.000                     18.541 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 169.14x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             313       418.742            0.003         0.068             0.031              27.354                                0.000                   0.000              nan     0.000                      0.125 
+TOT             313       418.742            0.923        21.220             9.616             109.417                                0.000                   0.000            0.000     0.000                     19.826 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 173.934x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       781.008            0.003         0.072             0.031              30.052                                0.000                   0.000              nan     0.000                      0.120 
+TOT             312       781.008            0.927        22.459             9.687             120.208                                0.000                   0.000            0.000     0.000                     18.972 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 178.7x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       765.666            0.003         0.068             0.030              28.975                                0.000                   0.000              nan     0.000                      0.120 
+TOT             312       765.666            0.971        21.180             9.446             115.901                                0.000                   0.000            0.000     0.000                     19.030 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 179.837x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       794.890            0.003         0.068             0.031              29.221                                0.000                   0.000              nan     0.000                      0.117 
+TOT             312       794.890            0.908        21.131             9.703             116.885                                0.000                   0.000            0.000     0.000                     18.518 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 172.859x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       746.580            0.003         0.072             0.031              28.082                                0.000                   0.000              nan     0.000                      0.122 
+TOT             312       746.580            0.934        22.506             9.720             112.327                                0.000                   0.000            0.000     0.000                     19.422 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 181.868x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       762.043            0.003         0.068             0.031              29.451                                0.000                   0.000              nan     0.000                      0.119 
+TOT             312       762.043            0.909        21.156             9.825             117.803                                0.000                   0.000            0.000     0.000                     18.878 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 177.42x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       419.779            0.003         0.067             0.031              28.300                                0.000                   0.000              nan     0.000                      0.117 
+TOT             312       419.779            0.941        21.040             9.646             113.199                                0.000                   0.000            0.000     0.000                     18.558 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 181.394x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       421.435            0.003         0.066             0.031              30.108                                0.000                   0.000              nan     0.000                      0.123 
+TOT             312       421.435            0.913        20.673             9.596             120.433                                0.000                   0.000            0.000     0.000                     19.573 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 171.883x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       424.422            0.003         0.071             0.033              28.381                                0.000                   0.000              nan     0.000                      0.117 
+TOT             312       424.422            0.992        22.015            10.195             113.526                                0.000                   0.000            0.000     0.000                     18.625 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 176.642x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       769.884            0.003         0.070             0.031              28.836                                0.000                   0.000              nan     0.000                      0.121 
+TOT             312       769.884            0.918        21.707             9.723             115.343                                0.000                   0.000            0.000     0.000                     19.119 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 185.44x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       422.618            0.003         0.066             0.030              27.179                                0.000                   0.000              nan     0.000                      0.120 
+TOT             312       422.618            0.860        20.568             9.204             108.717                                0.000                   0.000            0.000     0.000                     19.109 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 179.668x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       448.088            0.003         0.068             0.030              28.421                                0.000                   0.000              nan     0.000                      0.124 
+TOT             312       448.088            0.905        21.222             9.481             113.685                                0.000                   0.000            0.000     0.000                     19.692 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 184.467x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       433.420            0.003         0.065             0.030              27.234                                0.000                   0.000              nan     0.000                      0.119 
+TOT             312       433.420            0.863        20.380             9.238             108.937                                0.000                   0.000            0.000     0.000                     18.904 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 178.035x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       421.887            0.003         0.068             0.031              34.738                                0.000                   0.000              nan     0.000                      0.126 
+TOT             312       421.887            0.931        21.197             9.680             138.950                                0.000                   0.000            0.000     0.000                     19.993 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 182.144x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       432.812            0.003         0.068             0.030              27.498                                0.000                   0.000              nan     0.000                      0.121 
+TOT             312       432.812            0.888        21.342             9.515             109.992                                0.000                   0.000            0.000     0.000                     19.221 
+
+World: C:/Users/Andrei_Baneasa/Downloads/Evaluating-Simulation-Platforms-for-Modular-Mobile-Robots/benchmark/WeBots/benchmark/worlds/connector_benchmark.wbt
+World metrics: 20 solids, 8 joints, 16 graphical geometries
+Threads count: 1
+Shadows disabled: false
+Anti-aliasing disabled: false
+Average speed factor: 175.375x
+<mode> <stepsCount> <loading(ms)> <prePhysics(ms)> <physics(ms)> <postPhysics(ms)> <mainRendering(ms)> <virtualRealityHeadsetRendering(ms)> <gpuMemoryTransfer(ms)> <trianglesCount> <mainFPS> <controller:connector(ms)>
+AVG             312       420.936            0.003         0.065             0.031              29.061                                0.000                   0.000              nan     0.000                      0.126 
+TOT             312       420.936            0.962        20.375             9.701             116.245                                0.000                   0.000            0.000     0.000                     19.936 
+

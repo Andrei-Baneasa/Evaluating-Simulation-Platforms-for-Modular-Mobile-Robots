@@ -30,21 +30,18 @@ DEF LIGHT_MYBOT Robot {
       rotation 0 0 1 3.14159
       name "left connector"
       model "magnetic"
-      autoLock FALSE
       distanceTolerance 0.05
       axisTolerance 0.1
       rotationTolerance 0.1
     }
     Connector {
       translation 0 -0.055 0.04
-      rotation 0 0 1 0
       name "right connector"
       model "magnetic"
-      autoLock FALSE
       distanceTolerance 0.05
       axisTolerance 0.1
       rotationTolerance 0.1
-          }
+    }
     HingeJoint {
       jointParameters HingeJointParameters {
         position 2.290229266056272
@@ -59,9 +56,6 @@ DEF LIGHT_MYBOT Robot {
       endPoint Solid {
         translation 0 0.05 0.04
         rotation 0 1 0 2.290229266056272
-        children [
-          
-        ]
         boundingObject Box {
           size 0.02 0.02 0.02
         }
@@ -79,9 +73,6 @@ DEF LIGHT_MYBOT Robot {
       endPoint Solid {
         translation 0 -0.05 0.04
         rotation 0 -1 0 0.0022643742609006665
-        children [
-          
-        ]
         boundingObject Box {
           size 0.02 0.02 0.02
         }
@@ -124,7 +115,7 @@ DEF LIGHT_MYBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0 0.0449999999999993 0.025
+        translation 0 0.04499999999999927 0.025
         rotation 0.612109986146596 -0.6121095941468372 -0.5006427964257634 2.2132698998945637
         children [
           DEF WHEEL Pose {
@@ -293,6 +284,7 @@ DEF LIGHT_MYBOT Robot {
     mass 0.5
   }
   controller "connector_docking"
+  supervisor TRUE
 }
 DEF HEAVY_MYBOT Robot {
   translation 0.10012151455686943 -0.27689896116365775 -0.00023515089779353043
@@ -303,21 +295,18 @@ DEF HEAVY_MYBOT Robot {
       rotation 0 0 1 3.14159
       name "left connector"
       model "magnetic"
-      autoLock FALSE
       distanceTolerance 0.05
       axisTolerance 0.1
       rotationTolerance 0.1
     }
     Connector {
       translation 0 -0.055 0.04
-      rotation 0 0 1 0
       name "right connector"
       model "magnetic"
-      autoLock FALSE
       distanceTolerance 0.05
       axisTolerance 0.1
       rotationTolerance 0.1
-          }
+    }
     HingeJoint {
       jointParameters HingeJointParameters {
         position -0.0001688725266386119
@@ -332,9 +321,6 @@ DEF HEAVY_MYBOT Robot {
       endPoint Solid {
         translation 0 0.05 0.04
         rotation 0 -1 0 0.0001688725266478991
-        children [
-          
-        ]
         boundingObject Box {
           size 0.02 0.02 0.02
         }
@@ -352,8 +338,6 @@ DEF HEAVY_MYBOT Robot {
       endPoint Solid {
         translation 0 -0.05 0.04
         rotation 0 0.9999999999999999 0 3.092445177746648
-        children [
-        ]
         boundingObject Box {
           size 0.02 0.02 0.02
         }
@@ -393,7 +377,7 @@ DEF HEAVY_MYBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0 0.044999999999999214 0.025
+        translation 0 0.044999999999999186 0.025
         rotation 0.6121025552507853 -0.612102163258187 -0.5006609667131112 2.2132408426081795
         children [
           DEF WHEEL Pose {
@@ -438,7 +422,7 @@ DEF HEAVY_MYBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0 -0.04499999999999909 0.025
+        translation 0 -0.04499999999999906 0.025
         rotation 0.5353792878428196 -0.5353792367061316 -0.653251935360987 1.9842769401952545
         children [
           USE WHEEL
@@ -456,4 +440,5 @@ DEF HEAVY_MYBOT Robot {
     mass 0.5
   }
   controller "connector_docking"
+  supervisor TRUE
 }

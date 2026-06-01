@@ -54,8 +54,6 @@ DEF LIGHT_MYBOT Robot {
         physics Physics {
           mass 0.01
         }
-        linearVelocity -2.6508642194098854e-06 -0.0499960385121496 3.0191952891991112e-05
-        angularVelocity 0.0021935341308310947 -0.0005999871369782373 9.368352205619736e-05
       }
     }
     HingeJoint {
@@ -82,8 +80,6 @@ DEF LIGHT_MYBOT Robot {
         physics Physics {
           mass 0.01
         }
-        linearVelocity -1.4410121323309491e-06 -0.050005327384987426 -2.9914648774462645e-05
-        angularVelocity -0.00042465386654538107 -0.0006012765109327982 9.282641204041197e-05
       }
     }
     DEF LIGHT_BODY Pose {
@@ -120,8 +116,8 @@ DEF LIGHT_MYBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0 0.04499999999999952 0.025
-        rotation 0.6121099861465963 -0.6121095941468369 -0.5006427964257634 2.213269899894563
+        translation 0 0.04499999999999949 0.025
+        rotation 0.6121099861465963 -0.6121095941468372 -0.5006427964257633 2.213269899894563
         children [
           DEF WHEEL Pose {
             rotation 0.577656895078166 0.5771968951617173 -0.5771968951617173 -2.093935
@@ -146,8 +142,6 @@ DEF LIGHT_MYBOT Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 8.100552486623502e-06 -0.0499963781113958 2.6736187069332812e-05
-        angularVelocity 2.0000098861631592 0.0003850615067242224 0.0007286599399934011
       }
     }
     HingeJoint {
@@ -168,15 +162,13 @@ DEF LIGHT_MYBOT Robot {
       ]
       endPoint Solid {
         translation 0 -0.044999999999998916 0.025
-        rotation 0.5353902891071961 -0.5353902379696319 -0.6532339025315006 1.9843022188048847
+        rotation 0.5353902891071959 -0.5353902379696321 -0.6532339025315005 1.9843022188048844
         children [
           USE WHEEL
         ]
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 8.106244193312252e-06 -0.05000466498981568 -2.6449955770501335e-05
-        angularVelocity 2.000009932119112 0.0003850903063754088 0.0007285707766509537
       }
     }
     DEF RIGHT_EYE Pose {
@@ -293,8 +285,7 @@ DEF LIGHT_MYBOT Robot {
     mass 0.05
   }
   controller "connector"
-  linearVelocity -2.3507588499584327e-06 -0.05000069474424774 1.375567150711871e-07
-  angularVelocity 1.0254128161799682e-05 -0.0006010622510426546 9.296450010649662e-05
+  supervisor TRUE
 }
 DEF HEAVY_MYBOT Robot {
   translation 0.10012151455686943 -0.27689896116365775 -0.00023515089779353043
@@ -329,8 +320,6 @@ DEF HEAVY_MYBOT Robot {
         physics Physics {
           mass 0.01
         }
-        linearVelocity 6.586835552732743e-05 -0.04999790396842416 -2.938055112142754e-05
-        angularVelocity -4.672732976796876e-07 0.0005901080151433727 2.5197659633815326e-05
       }
     }
     HingeJoint {
@@ -357,8 +346,6 @@ DEF HEAVY_MYBOT Robot {
         physics Physics {
           mass 0.01
         }
-        linearVelocity 6.707645511426234e-05 -0.05000041647389101 2.962895064379984e-05
-        angularVelocity 0.002745650775562247 0.0005923267810781835 2.4246730873429094e-05
       }
     }
     DEF MAIN_BODY Pose {
@@ -392,8 +379,8 @@ DEF HEAVY_MYBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0 0.04499999999999934 0.025
-        rotation 0.6121025552507854 -0.612102163258187 -0.5006609667131112 2.2132408426081795
+        translation 0 0.04499999999999931 0.025
+        rotation 0.6121025552507853 -0.612102163258187 -0.5006609667131112 2.2132408426081795
         children [
           DEF WHEEL Pose {
             rotation 0.577656895078166 0.5771968951617173 -0.5771968951617173 -2.093935
@@ -418,8 +405,6 @@ DEF HEAVY_MYBOT Robot {
           density -1
           mass 0.05
         }
-        linearVelocity 5.645663165924753e-05 -0.04999846815166381 -2.5983821638748302e-05
-        angularVelocity 1.9999825819710957 0.0022035925624852193 -0.0006489245009606687
       }
     }
     HingeJoint {
@@ -439,7 +424,7 @@ DEF HEAVY_MYBOT Robot {
         }
       ]
       endPoint Solid {
-        translation 0 -0.044999999999999214 0.025
+        translation 0 -0.044999999999999186 0.025
         rotation 0.5353792878428196 -0.5353792367061316 -0.653251935360987 1.9842769401952545
         children [
           USE WHEEL
@@ -447,8 +432,6 @@ DEF HEAVY_MYBOT Robot {
         name "right wheel"
         boundingObject USE WHEEL
         physics USE PHYSICS_WHEEL
-        linearVelocity 5.646172082173892e-05 -0.05000036409041519 2.6248044532833323e-05
-        angularVelocity 1.9999826762967303 0.0022038157297136355 -0.0006495880499087227
       }
     }
   ]
@@ -459,6 +442,5 @@ DEF HEAVY_MYBOT Robot {
     mass 0.5
   }
   controller "connector"
-  linearVelocity 6.676429772548343e-05 -0.04999913893723854 1.2348998331001808e-07
-  angularVelocity -1.6599332796051006e-05 0.0005900950005813315 2.5203339094359487e-05
+  supervisor TRUE
 }

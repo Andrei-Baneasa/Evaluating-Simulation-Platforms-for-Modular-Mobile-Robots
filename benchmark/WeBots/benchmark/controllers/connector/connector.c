@@ -24,10 +24,15 @@
 #include <webots/motor.h>
 #include <webots/position_sensor.h>
 #include <webots/robot.h>
+#include <webots/supervisor.h>
 
 #include <webots/connector.h>
 #include <webots/motor.h>
 #include <webots/robot.h>
+
+#include <windows.h>
+#include <psapi.h>
+#include <stdio.h>
 
 #define SPEED 2.0
 #define TIME_STEP 64
@@ -51,7 +56,11 @@ int main() {
   wb_motor_set_velocity(right_motor, 0.0);
 
   int robot_number = wb_robot_get_name()[6] - '0';
-
+  
+  int ram_samples = 0;  
+  int steps = 0;
+  int max_steps = (int)(10.0 / (TIME_STEP / 1000.0));
+  
   while (wb_robot_step(TIME_STEP) != -1) {
     double left_speed = 0.0;
     double right_speed = 0.0;
@@ -73,8 +82,13 @@ int main() {
 
     wb_motor_set_velocity(left_motor, left_speed);
     wb_motor_set_velocity(right_motor, right_speed);
-  }
+    
+    steps++;
+    
+    if(steps >= max_steps)
+      wb_supervisor_simulation_quit(EXIT_SUCCESS);
 
+  }
   wb_robot_cleanup();
   return 0;
 }
